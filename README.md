@@ -95,8 +95,6 @@ db.products.insertOne({
   description: 'Snarks are friendly. Go ahead and scratch behind its ears.',
   imageUrl: 'https://cdn.pixabay.com/photo/2016/03/31/20/51/book-1296045_960_720.png'
 })
-```
 
-```
 db.users.insertOne({ name: 'Mike', email: 'mike@test.com' })
 ```
