@@ -61,12 +61,12 @@ db.createUser(
 ## Creating a non-root user
 
 ```
-use test
+use shop
 db.createUser(
   {
     user: "udemy",
     pwd:  "udemy",
-    roles: [ { role: "readWrite", db: "test" } ]
+    roles: [ { role: "readWrite", db: "shop" } ]
   }
 )
 db.getUsers()
@@ -74,7 +74,7 @@ db.getUser('udemy')
 db.grantRolesToUser(
     "udemy",
     [
-      { role: "readWrite", db: "test" }
+      { role: "readWrite", db: "shop" }
     ]
 )
 db.revokeRolesFromUser(
